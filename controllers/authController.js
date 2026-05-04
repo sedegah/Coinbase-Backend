@@ -2,7 +2,6 @@ import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import User from '../models/User.js';
 
-// 🔐 Load keys from environment variables
 const privateKey = process.env.PRIVATE_KEY?.replace(/\\n/g, '\n');
 const publicKey = process.env.PUBLIC_KEY?.replace(/\\n/g, '\n');
 
